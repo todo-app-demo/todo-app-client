@@ -1,7 +1,7 @@
 'use strict';
 
 var app = app || {};
-var __API_URL__ = '';
+var __API_URL__ = 'https://todo-app-301d25.herokuapp.com/';
 
 (function(module) {
   function errorCallback(err) {
