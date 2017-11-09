@@ -7,6 +7,7 @@ var app = app || {};
 
   function reset() {
     $('.container').hide();
+    $('.add-link').hide();
     $('.navigation').slideDown(350);
   }
 
@@ -20,6 +21,7 @@ var app = app || {};
   taskView.initAddForm = function() {
     reset();
     $('.add-view').show();
+    $('.add-link').show();
     $('#add-form').on('submit', function(e) {
       e.preventDefault();
 
@@ -30,7 +32,6 @@ var app = app || {};
         contact: event.target.contact.value,
         status: event.target.status.value,
       };
-      console.log('task', task);
 
       module.Task.createTask(task);
     })
